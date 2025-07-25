@@ -24,14 +24,14 @@ def binary_search(lst, target):
         steps += 1
         middle = (left + right) // 2
         if lst[middle] == target:
-            print(steps)
+            print(f"Количество шагов: {steps}")
             return middle
         elif lst[middle] < target:
             left = middle + 1
         elif lst[middle] > target:
             right = middle - 1
 
-    print(steps)
+    print(f"Количество шагов: {steps}")
     return "не найдено"
 
 
